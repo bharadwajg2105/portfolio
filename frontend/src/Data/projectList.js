@@ -39,7 +39,7 @@ const projectList = [
       "CSS",
     ],
     extraSkillsCount: 1,
-    liveDemoLink: "https://shop-sphere-brown.vercel.app/",
+    liveDemoLink: "https://chess-tau-one.vercel.app/",
   },
 
   {
