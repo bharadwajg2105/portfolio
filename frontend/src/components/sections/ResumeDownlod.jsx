@@ -7,7 +7,8 @@ const ResumeDownlod = () => {
   const [isImageEnlarged, setIsImageEnlarged] = useState(false);
 
   const resumeTitle = "Resume Preview";
-  const pdfPath = "./public/myank_bhardwaj_resume.pdf";
+  // ✅ Correct path: files in public/ are served from root
+  const pdfPath = "/myank_bhardwaj_resume.pdf";
 
   return (
     <>
@@ -21,7 +22,8 @@ const ResumeDownlod = () => {
             please download my detailed resume.
           </p>
 
-          <a href={pdfPath} download className="download-btn-link">
+          {/* ✅ Force correct filename when downloading */}
+          <a href={pdfPath} download="Mayank_Bhardwaj_Resume.pdf" className="download-btn-link">
             <button className="download-btn">
               <MdFileDownload className="download-icon" />
               Download PDF
